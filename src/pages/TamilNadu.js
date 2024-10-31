@@ -2,7 +2,13 @@ import React from 'react';
 import { Box, Typography, Card, CardMedia, CardContent, Grid } from '@mui/material';
 import brihadishwararImage from '../assets/brihadiswara.jpg';
 import rameshwaramImage from '../assets/rameswaram.webp';
-import meenakshiImage from '../assets/meenakshi.jpg';
+import meenakshiamma from '../assets/meenakshiamma.webp';
+import kanyakumari from '../assets/kanyakumari.webp';
+import palani from '../assets/Palani.jpg';
+import Srirangam from '../assets/sriranga.jpg';
+import jambukeswar from '../assets/jambukeswar.png';
+import arunachalam from '../assets/arunachalam.jpg';
+import golden from '../assets/golden.webp';
 
 const Tamilnadu = () => {
   const temples = [
@@ -13,13 +19,43 @@ const Tamilnadu = () => {
     },
     {
       name: 'Rameshwaram Temple',
-      description: 'Rameshwaram Temple in Rameswaram is one of the Char Dham pilgrimage sites and is famous for its long corridors and sacred wells.',
+      description: 'The shrine is dedicated to Lord Shiva and is one of the twelve jyotirlinga temples in India. Ramanathaswamy temple is known for its imposing structure.',
       image: rameshwaramImage,
     },
     {
       name: 'Meenakshi Temple',
       description: 'Located in Madurai, Meenakshi Temple is renowned for its stunning gopurams and vibrant sculptures dedicated to Goddess Meenakshi and Lord Sundareswarar.',
-      image: meenakshiImage,
+      image: meenakshiamma,
+    },
+    {
+      name: 'KanyaKumari',
+      description: 'Kanyakumari is popular for its beautiful beaches, unique Vivekananda Rock Memorial, and stunning sunrise and sunset views. It is also a major pilgrimage center for Hindus.',
+      image: kanyakumari,
+    },
+    {
+      name: 'Palani Temple',
+      description: 'The Palani Murugan Temple or Arulmigu Dhandayuthapani Swamy Temple (Thiru Avinankudi), dedicated to Murugan is situated on a hill overlooking the town. The temple is visited by more than 7 million pilgrims each year.',
+      image: palani,
+    },
+    {
+      name: 'SriRangam Temple',
+      description: 'Srirangam is the foremost of the eight self-manifested shrines (Swayam Vyakata Kshetras ) of Lord Vishnu. Sri Renganatha Swamy temple, established in a 156 acre land, is a great vaishnavite temple dedicated to Lord Vishnu. ',
+      image: Srirangam,
+    },
+    {
+      name: 'Jambukeswarar Temple',
+      description: 'Jambukeswarar Temple, Thiruvanaikaval is a temple of Shiva in Tiruchirapalli district, in the state of Tamil Nadu, India. It is one of the five major Shiva Temples of Tamil Nadu representing the Mahābhūta or five elements; this temple represents the element of water, or neer in Tamil.',
+      image: jambukeswar,
+    },
+    {
+      name: 'Arunachalam Temple',
+      description: 'Arunachalesvara Temple (also called Annamalaiyar Temple), is a Hindu temple dedicated to the god Shiva, located at the base of Arunachala hill in the town of Tiruvannamalai in Tamil Nadu, India. It is significant to the Hindu sect of Shaivism as one of the temples associated with the five elements.',
+      image: arunachalam,
+    },
+    {
+      name: 'Golden Temple',
+      description: 'Sri Lakshmi Narayani Golden Temple complex inside the Thirupuram spiritual park is situated at the foot of a small range of green hills at Thirumalaikodi (or simply Malaikodi) Vellore in Tamil Nadu, India. It is 120 km from Tirupati, 145 km from Chennai, 160 km from Pondicherry and 200 km from Bengaluru.',
+      image: golden,
     },
   ];
 

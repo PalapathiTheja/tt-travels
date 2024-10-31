@@ -1,8 +1,10 @@
 import React from 'react';
 import { Box, Typography, Card, CardMedia, CardContent, Grid } from '@mui/material';
 import tirupatiImage from '../assets/tirupati.webp'
-import sriKalahastiImage from '../assets/kalahasti.jpeg'
+import sriKalahastiImage from '../assets/kalahasti.jpg';
 import gudimallamImage from '../assets/gudimallam.webp'
+import kanipakam from '../assets/kanipakam.jpg';
+
 
 const Andhrapradesh = () => {
   const temples = [
@@ -20,6 +22,11 @@ const Andhrapradesh = () => {
       name: 'Gudimallam',
       description: 'Gudimallam is famous for the ancient Parasurameswara Temple, known for the unique 1.35-meter high Shiva Lingam, which is believed to be from the 3rd century BCE.',
       image: gudimallamImage,
+    },
+    {
+      name: 'Kanipakam Temple',
+      description: 'Vinayaka Temple or Sri Varasidhi Vinayaka Swamy Temple is a Hindu temple of Ganesha. It is located at Kanipakam in Chittoor district of Andhra Pradesh, India. The temple is about 11 km from Chittoor and 68 km from Tirupati.',
+      image: kanipakam,
     },
   ];
 

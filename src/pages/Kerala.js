@@ -5,6 +5,8 @@ import guruvayurImage from '../assets/guruvayur.webp';
 import padmanabhaswamyImage from '../assets/padmanabha.jpg';
 import erumeli from '../assets/erumeli.jpg';
 import pamba from '../assets/pamba.webp';
+import sannidhan from '../assets/sannidhan.webp';
+import trivendrum from '../assets/trivendrum.jpg';
 
 
 const KeralaTemples = () => {
@@ -33,6 +35,16 @@ const KeralaTemples = () => {
       name: 'Pamba',
       description: 'The river is also known as Dakshina Bhageerathi. During ancient times, it was called River Baris and jordan of malankara. The River Pamba enriches the lands of Pathanamthitta district and the Kuttanad area of Alappuzha district and few areas of Kottayam.',
       image: pamba,
+    },
+    {
+      name: 'Sannidhanam',
+      description: 'The temple is open to all faiths. The divine qualities like equality, fraternity, tolerance, humanity etc.. are shining well in the pilgrims.Ayyappa cult gives much importance for the secularism and communal harmony and has turned out to be a model for the whole world.',
+      image: sannidhan,
+    },
+    {
+      name: 'Trivendrum',
+      description: 'Thiruvananthapuram, formerly known as Trivandrum, is the capital city of the Indian state of Kerala. It is the largest and most populous city in Kerala. The encompassing urban agglomeration population is around 1.68 million. Located on the west coast of India near the extreme south of the mainland',
+      image: trivendrum,
     },
   ];
 
