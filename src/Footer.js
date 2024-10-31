@@ -10,32 +10,33 @@ const Footer = () => {
       {/* About Us Section */}
       <Box
         sx={{
-          bgcolor: '#414a4c', // Background color for About Us section
-          p: 4, // Padding for the About Us section
+          background: 'radial-gradient(circle at 10% 20%, rgb(0, 52, 89) 0%, rgb(0, 168, 232) 90%)', // Radial gradient background
+          p: 4,
+          color: 'white', // Set text color for consistency
         }}
       >
         <Container>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               {/* Left side content */}
-              <Typography variant="h4" component="h2" gutterBottom color="white">
+              <Typography variant="h4" component="h2" gutterBottom>
                 About Us
               </Typography>
-              <Typography variant="body1" paragraph color="white">
+              <Typography variant="body1" paragraph>
                 We provide the best services for car and bus rentals in Tirupati. Affordable rates, reliable service.
               </Typography>
             </Grid>
             <Grid item xs={12} sm={6} display="flex" flexDirection="column" alignItems="flex-start">
               {/* Right side contact info */}
-              <Typography variant="h6" component="h3" gutterBottom color="white">
+              <Typography variant="h6" component="h3" gutterBottom>
                 Contact Us
               </Typography>
-              <Typography variant="body1" color="white">
+              <Typography variant="body1">
                 <a href="tel:+919391711883" style={{ color: 'white', textDecoration: 'none' }}>
                   Phone: +91 9391711883
                 </a>
               </Typography>
-              <Typography variant="body1" color="white">
+              <Typography variant="body1">
                 <a href="mailto:info@tttravels.com" style={{ color: 'white', textDecoration: 'none' }}>
                   Email: info@tttravels.com
                 </a>
@@ -73,7 +74,11 @@ const Footer = () => {
       </Box>
 
       {/* Footer Section */}
-      <Box sx={{ bgcolor: 'primary.main', p: 2, textAlign: 'center' }}>
+      <Box sx={{ 
+        background: 'radial-gradient(circle at 10% 20%, rgb(0, 52, 89) 0%, rgb(0, 168, 232) 90%)', 
+        p: 2, 
+        textAlign: 'center',
+      }}>
         <Typography variant="body2" color="white">
           © 2024 TT Travels. All rights reserved.
         </Typography>

@@ -7,6 +7,8 @@ import erumeli from '../assets/erumeli.jpg';
 import pamba from '../assets/pamba.webp';
 import sannidhan from '../assets/sannidhan.webp';
 import trivendrum from '../assets/trivendrum.jpg';
+import pandalam from '../assets/pandalam.jpg';
+
 
 
 const KeralaTemples = () => {
@@ -17,8 +19,13 @@ const KeralaTemples = () => {
       image: ananthapadmanabhaImage,
     },
     {
+      name: 'Pandalam Ayyappa Temple',
+      description: 'Pandalam Ayyappa Temple is a popular Ayyappa temple in Kerala which is situated at Pandalam in Pathanamthitta district. Lord Ayyappa is the presiding deity of this temple who was born out of the union between Lord Shiva and the mythical Mohini, the avatar of Lord Vishnu.',
+      image: pandalam,
+    },
+    {
       name: 'Guruvayur Shri Krishna Temple',
-      description: 'Guruvayur Temple, in Thrissur, is one of the most revered Krishna temples in India, attracting devotees for its religious significance and traditional architecture.',
+      description: 'Guruvayur Temple is a Hindu temple dedicated to Guruvayurappan (four-armed form of the Vishnu), located in the town of Guruvayur in Kerala, India. Administrated by the Guruvayur Devaswom Board, it is one of the most important places of worship for Hindus in Kerala and Tamil Nadu.',
       image: guruvayurImage,
     },
     {
