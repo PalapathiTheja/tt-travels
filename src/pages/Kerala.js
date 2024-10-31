@@ -3,6 +3,9 @@ import { Box, Typography, Card, CardMedia, CardContent, Grid } from '@mui/materi
 import ananthapadmanabhaImage from '../assets/anantha.jpg';
 import guruvayurImage from '../assets/guruvayur.webp';
 import padmanabhaswamyImage from '../assets/padmanabha.jpg';
+import erumeli from '../assets/erumeli.jpg';
+import pamba from '../assets/pamba.webp';
+
 
 const KeralaTemples = () => {
   const temples = [
@@ -20,6 +23,16 @@ const KeralaTemples = () => {
       name: 'Sree Padmanabhaswamy Temple',
       description: 'Located in Thiruvananthapuram, this temple is dedicated to Lord Vishnu and is famous for its wealth, architectural beauty, and historical importance.',
       image: padmanabhaswamyImage,
+    },
+    {
+      name: 'Erumeli',
+      description: 'Erumeli is famous for Hindu Muslim religious harmony . The Mosque at Erumeli about 60 Km from north- east of Kottayam town is dedicated to Vavar, a contemporary and companion of Lord Ayyappa, a Hindu deity.',
+      image: erumeli,
+    },
+    {
+      name: 'Pamba',
+      description: 'The river is also known as Dakshina Bhageerathi. During ancient times, it was called River Baris and jordan of malankara. The River Pamba enriches the lands of Pathanamthitta district and the Kuttanad area of Alappuzha district and few areas of Kottayam.',
+      image: pamba,
     },
   ];
 
