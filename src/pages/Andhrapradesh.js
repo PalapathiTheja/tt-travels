@@ -1,10 +1,9 @@
 import React from 'react';
 import { Box, Typography, Card, CardMedia, CardContent, Grid } from '@mui/material';
-import tirupatiImage from '../assets/tirupati.webp'
+import tirupatiImage from '../assets/tirupati.webp';
 import sriKalahastiImage from '../assets/kalahasti.jpg';
-import gudimallamImage from '../assets/gudimallam.webp'
+import gudimallamImage from '../assets/gudimallam.webp';
 import kanipakam from '../assets/kanipakam.jpg';
-
 
 const Andhrapradesh = () => {
   const temples = [
@@ -38,19 +37,47 @@ const Andhrapradesh = () => {
       <Grid container spacing={4}>
         {temples.map((temple, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card sx={{ borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
-              <CardMedia
-                component="img"
-                alt={temple.name}
-                height="200"
-                image={temple.image}
-                sx={{ objectFit: 'cover' }}
-              />
+            <Card 
+              sx={{ 
+                borderRadius: '16px', 
+                boxShadow: '0 6px 12px rgba(0, 0, 0, 0.15)', 
+                overflow: 'hidden', 
+                position: 'relative', 
+                transition: 'transform 0.3s ease-in-out',
+                '&:hover': { transform: 'scale(1.05)' } 
+              }}
+            >
+              <Box sx={{ position: 'relative' }}>
+                <CardMedia
+                  component="img"
+                  alt={temple.name}
+                  height="200"
+                  image={temple.image}
+                  sx={{
+                    objectFit: 'cover',
+                    filter: 'brightness(70%)',
+                    transition: 'filter 0.3s ease',
+                    '&:hover': { filter: 'brightness(100%)' }
+                  }}
+                />
+                <Box
+                  sx={{
+                    position: 'absolute',
+                    bottom: 0,
+                    width: '100%',
+                    bgcolor: 'rgba(0, 0, 0, 0.5)',
+                    color: 'white',
+                    textAlign: 'center',
+                    py: 1,
+                  }}
+                >
+                  <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                    {temple.name}
+                  </Typography>
+                </Box>
+              </Box>
               <CardContent>
-                <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: '10px' }}>
-                  {temple.name}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'justify' }}>
                   {temple.description}
                 </Typography>
               </CardContent>
