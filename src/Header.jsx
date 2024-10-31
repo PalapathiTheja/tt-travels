@@ -40,6 +40,9 @@ const Header = () => {
             <Button color="inherit" sx={{ ml: 2 }} onClick={handleOpenDialog}>
               Temples
             </Button>
+            <Button color="inherit" sx={{ ml: 2 }} onClick={handleOpenDialog}>
+              Homestays
+            </Button>
             <Button color="inherit" component={Link} to="/about" sx={{ ml: 2 }}>
               About Us
             </Button>
