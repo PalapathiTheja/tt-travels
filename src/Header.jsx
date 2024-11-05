@@ -27,7 +27,7 @@ const Header = () => {
 
   const navigationLinks = [
     { name: 'Home', link: '/' },
-    { name: 'Homestays', action: handleOpenDialog },
+    { name: 'Homestays', link: '/homestays' },
     { name: 'Temples', action: handleOpenDialog },
     { name: 'About Us', link: '/about' },
   ];

@@ -12,6 +12,7 @@ import Andhrapradesh from './pages/Andhrapradesh'
 import Tamilnadu from './pages/TamilNadu';
 import KeralaTemples from './pages/Kerala';
 import KarnatakaTemples from './pages/Karnataka';
+import Homestays from './pages/Homestays';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/" element={<CarCard />} />
             {/* About Us Route */}
             <Route path="/about" element={<AboutUs />} />
+            <Route path="/homestays" element={<Homestays />} />
             <Route path="/temples/andhra-pradesh" element={<Andhrapradesh />} /> {/* Andhra Pradesh route */}
             <Route path="/temples/tamil-nadu" element={<Tamilnadu />} /> 
             <Route path="/temples/kerala" element={<KeralaTemples />} /> 
