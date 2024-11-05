@@ -63,13 +63,23 @@ const KeralaTemples = () => {
       <Grid container spacing={4}>
         {temples.map((temple, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card sx={{ borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
+            <Card sx={{
+              borderRadius: '10px',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+              overflow: 'hidden',
+              transition: 'transform 0.3s',
+              '&:hover': { transform: 'scale(1.05)' }
+            }}>
               <CardMedia
                 component="img"
                 alt={temple.name}
                 height="200"
                 image={temple.image}
-                sx={{ objectFit: 'cover' }}
+                sx={{
+                  objectFit: 'cover',
+                  transition: 'transform 0.3s',
+                  '&:hover': { transform: 'scale(1.1)' }
+                }}
               />
               <CardContent>
                 <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: '10px' }}>
