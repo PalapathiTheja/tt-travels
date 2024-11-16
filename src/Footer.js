@@ -3,7 +3,11 @@ import { Box, Typography, Container, Grid, IconButton } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
+import {
+  LocationOn,
+  Phone,
+  Email,
+} from "@mui/icons-material";
 const Footer = () => {
   return (
     <div>
@@ -31,16 +35,34 @@ const Footer = () => {
               <Typography variant="h6" component="h3" gutterBottom>
                 Contact Us
               </Typography>
+              <Grid item xs={12}>
+                <Box sx={{ display: "flex", alignItems: "center", color: "#fff" }}>
+                <Phone sx={{ mr: 2 }} />
               <Typography variant="body1">
                 <a href="tel:+919391711883" style={{ color: 'white', textDecoration: 'none' }}>
-                  Phone: +91 9391711883
+                  +91 9391711883
                 </a>
               </Typography>
+              </Box>
+              </Grid>
+              <br/>
+              <Grid item xs={12}>
+                <Box sx={{ display: "flex", alignItems: "center", color: "#fff" }}>
+                <Email sx={{ mr: 2 }} />
               <Typography variant="body1">
                 <a href="mailto:info@tttravels.com" style={{ color: 'white', textDecoration: 'none' }}>
-                  Email: info@tttravels.com
+                  info@tttravels.com
                 </a>
               </Typography>
+              </Box>
+              </Grid>
+              <br/>
+              <Grid item xs={12}>
+                <Box sx={{ display: "flex", alignItems: "center", color: "#fff" }}>
+                  <LocationOn sx={{ mr: 2 }} />
+                  <Typography>opposite to BMR Parking, Kothapalli, Tirupati</Typography>
+                </Box>
+              </Grid>
               {/* Social Media Icons */}
               <Box sx={{ mt: 2 }}>
                 <IconButton 
