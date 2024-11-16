@@ -9,8 +9,18 @@ import tempo1 from './assets/tempo1.webp';
 import tempo3 from './assets/tempo3.jpg';
 import bus1 from './assets/bus1.avif';
 import bus2 from './assets/bus3.webp';
-
+import urbania from './assets/urbania.webp';
 const carData = [
+  {
+    name: 'Force Urbania',
+    image: urbania,
+    rate: '20',
+    maxPeople: '17',
+    transmission: 'Automatic',
+    airConditioned: 'Yes',
+    driverAllowance: '500',
+    phone: '+91 8885544518',
+  },
   {
     name: 'Swift Dzire',
     image: swift,
@@ -31,6 +41,7 @@ const carData = [
     driverAllowance: '500',
     phone: '+91 8885544518',
   },
+  
   {
     name: 'Hyundai Creta',
     image: hyundai,
