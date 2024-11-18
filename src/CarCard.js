@@ -187,7 +187,7 @@ const CarCard = () => {
                   component="h2"
                   sx={{ fontWeight: 'bold', color: 'primary.main' }}
                 >
-                  {car.name} in Tirupati
+                  {car.name}
                 </Typography>
                 <Typography variant="body2" color="text.secondary" sx={{ fontWeight: 'bold' }}>
                   Rate per Kilometer:
