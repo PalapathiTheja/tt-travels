@@ -64,7 +64,7 @@ const Header = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     p: 2,
-                    bgcolor: '#f1f1f1',
+                    bgcolor: '#fff',
                   }}
                   role="presentation"
                 >
