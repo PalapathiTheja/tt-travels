@@ -1520,7 +1520,7 @@ const CarCard = () => {
   return (
     <>
       <Helmet>
-        <title>Car Rentals in Tirupati | TT Travels - Comprehensive Vehicle Options</title>
+        <title>TT Travels in Tirupati | Car,Bus,Tempo Rentals</title>
         <meta
           name="description"
           content="Explore detailed car rental options in Tirupati with TT Travels. Comprehensive vehicle details for Swift Dzire, Toyota Innova, Tempo Travellers, and buses."
