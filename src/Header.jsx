@@ -14,7 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useMediaQuery } from '@mui/material';
 import { Link } from 'react-router-dom';
-import logo from './assets/logo.png';
+import logo from './assets/ttTravels.png';
 
 const Header = () => {
   const [openDialog, setOpenDialog] = useState(false);
