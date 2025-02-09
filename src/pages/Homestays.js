@@ -11,9 +11,23 @@ import {
 import homestayImage1 from "../assets/home3.webp";
 import homestayImage2 from "../assets/home2.avif";
 import homestayImage3 from "../assets/home1.webp";
+import homestay1 from "../assets/homestay1.jpg"
+import redstone from "../assets/redstone.jpg"
+import keralastay from "../assets/keralastay.jpeg"
+
 
 const Homestays = () => {
   const homestays = [
+    {
+      name: "Redstone villas and suites",
+      capacity: "Fits 4 Adults",
+      meals: "No meals included",
+      cancellationPolicy: "Non-Refundable",
+      pricePerNight: "₹ 2,500",
+      discountedPrice: "₹ 1,950",
+      taxes: "₹ 700",
+      image: redstone,
+    },
     {
       name: "Sree Service Apartments",
       capacity: "Fits 2 Adults",
@@ -23,6 +37,16 @@ const Homestays = () => {
       discountedPrice: "₹ 1,999",
       taxes: "₹ 800",
       image: homestayImage1,
+    },
+    {
+      name: "Ushus Homestay",
+      capacity: "Fits 4 Adults",
+      meals: "No meals included",
+      cancellationPolicy: "Non-Refundable",
+      pricePerNight: "₹ 3,200",
+      discountedPrice: "₹ 2,900",
+      taxes: "₹ 700",
+      image: keralastay,
     },
     {
       name: "MAHAS Gateway Homestay",
@@ -44,6 +68,17 @@ const Homestays = () => {
       taxes: "₹ 700",
       image: homestayImage3,
     },
+    {
+      name: "Wooden Cottage Villa",
+      capacity: "Fits 4 Adults",
+      meals: "No meals included",
+      cancellationPolicy: "Non-Refundable",
+      pricePerNight: "₹ 4,950",
+      discountedPrice: "₹ 4,650",
+      taxes: "₹ 700",
+      image: homestay1,
+    },
+    
   ];
 
   return (

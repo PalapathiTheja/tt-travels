@@ -4,8 +4,7 @@ import Header from './Header'
 import CarCard from './CarCard';
 import AboutUs from './AboutUs'; // Import the AboutUs component
 import Footer from './Footer';
-import { Container, Box } from '@mui/material';
-import ImageCarousel from './ImageCarousel';
+import { Container } from '@mui/material';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Andhrapradesh from './pages/Andhrapradesh'
@@ -23,10 +22,6 @@ function App() {
 
         {/* Main Content */}
         <Container>
-          <Box sx={{ mt: { xs: 3, md: 5 } }}>
-            <ImageCarousel />
-          </Box>
-
           <Routes>
             {/* Home Route showing Car Cards */}
             <Route path="/" element={<CarCard />} />
