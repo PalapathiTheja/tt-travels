@@ -11,10 +11,9 @@ import {
 import homestayImage1 from "../assets/home3.webp";
 import homestayImage2 from "../assets/home2.avif";
 import homestayImage3 from "../assets/home1.webp";
-import homestay1 from "../assets/homestay1.jpg"
-import redstone from "../assets/redstone.jpg"
-import keralastay from "../assets/keralastay.jpeg"
-
+import homestay1 from "../assets/homestay1.jpg";
+import redstone from "../assets/redstone.jpg";
+import keralastay from "../assets/keralastay.jpeg";
 
 const Homestays = () => {
   const homestays = [
@@ -78,49 +77,80 @@ const Homestays = () => {
       taxes: "₹ 700",
       image: homestay1,
     },
-    
   ];
 
   return (
-    <Box sx={{ padding: '20px' }}>
-      <Typography variant="h4" sx={{ color: '#ff6f00', fontWeight: 'bold', textAlign: 'center', marginBottom: '20px' }}>
+    <Box sx={{ padding: "20px" }}>
+      <Typography
+        variant="h4"
+        sx={{
+          color: "#ff6f00",
+          fontWeight: "bold",
+          textAlign: "center",
+          marginBottom: "20px",
+        }}
+      >
         Homestays
       </Typography>
       <Grid container spacing={4}>
         {homestays.map((homestay, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card sx={{
-              borderRadius: '10px',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-              overflow: 'hidden',
-              transition: 'transform 0.3s',
-              '&:hover': { transform: 'scale(1.05)' }
-            }}>
+            <Card
+              sx={{
+                borderRadius: "10px",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                overflow: "hidden",
+                transition: "transform 0.3s",
+                "&:hover": { transform: "scale(1.05)" },
+              }}
+            >
               <CardMedia
                 component="img"
                 alt={homestay.name}
                 height="200"
                 image={homestay.image}
                 sx={{
-                  objectFit: 'cover',
-                  transition: 'transform 0.3s',
-                  '&:hover': { transform: 'scale(1.1)' }
+                  objectFit: "cover",
+                  transition: "transform 0.3s",
+                  "&:hover": { transform: "scale(1.1)" },
                 }}
               />
               <CardContent>
-                <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: '10px' }}>
+                <Typography
+                  variant="h6"
+                  sx={{ fontWeight: "bold", marginBottom: "10px" }}
+                >
                   {homestay.name}
                 </Typography>
-                <Typography variant="body2" color="text.secondary" sx={{ marginBottom: '10px' }}>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ marginBottom: "10px" }}
+                >
                   {homestay.capacity}
                 </Typography>
-                <Typography variant="body2" color="text.secondary" sx={{ marginBottom: '10px' }}>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ marginBottom: "10px" }}
+                >
                   {homestay.meals}
                 </Typography>
-                <Typography variant="body2" color="text.secondary" sx={{ marginBottom: '10px' }}>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ marginBottom: "10px" }}
+                >
                   {homestay.cancellationPolicy}
                 </Typography>
-                <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#ff6f00', marginBottom: '10px' }}>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontWeight: "bold",
+                    color: "#ff6f00",
+                    marginBottom: "10px",
+                  }}
+                >
                   {homestay.pricePerNight} Per Night
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
@@ -129,9 +159,14 @@ const Homestays = () => {
                 <Button
                   variant="contained"
                   color="primary"
-                  sx={{ marginTop: '10px', backgroundColor: '#ff6f00' }}
+                  sx={{ marginTop: "10px", backgroundColor: "#ff6f00" }}
                 >
-                  BOOK THIS NOW
+                  <a
+                    href={`tel:+91 9391711883`}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    BOOK THIS NOW
+                  </a>
                 </Button>
               </CardContent>
             </Card>
